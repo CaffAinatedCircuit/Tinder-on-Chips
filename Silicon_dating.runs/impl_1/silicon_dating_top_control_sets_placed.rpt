@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec  4 23:46:46 2025
+| Host         : HOFUD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file silicon_dating_top_control_sets_placed.rpt
+| Design       : silicon_dating_top
+| Device       : xc7vx690t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |     2 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|    16+ |           13 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             190 |           36 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             192 |           39 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+---------------------------------------------------+----------------------------------------------+------------------+----------------+
+|      Clock Signal     |                   Enable Signal                   |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-----------------------+---------------------------------------------------+----------------------------------------------+------------------+----------------+
+|  clk_global_IBUF_BUFG | GEN_NODES[0].u_person_node/free_wait_cnt          | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                4 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[0].u_person_node/dating_cnt             | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                3 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[0].u_person_node/work_cnt[7]_i_1_n_0    | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                3 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[1].u_person_node/dating_cnt             | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                4 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[1].u_person_node/work_cnt[7]_i_1__0_n_0 | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                3 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[1].u_person_node/free_wait_cnt          | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                4 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[2].u_person_node/free_wait_cnt          | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                4 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[2].u_person_node/dating_cnt             | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                3 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[2].u_person_node/work_cnt[7]_i_1__1_n_0 | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                2 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[3].u_person_node/dating_cnt             | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                3 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[3].u_person_node/free_wait_cnt          | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                4 |             16 |
+|  clk_global_IBUF_BUFG | GEN_NODES[3].u_person_node/work_cnt[7]_i_1__2_n_0 | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |                2 |             16 |
+|  clk_global_IBUF_BUFG |                                                   | GEN_NODES[2].u_person_node/wh_rx_ready_reg_0 |               36 |            190 |
++-----------------------+---------------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

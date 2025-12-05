@@ -1,0 +1,25 @@
+# Simultaneously Switching Noise (SSN) Report
+# Version: 1.0
+# Created on: Thu Dec  4 23:13:45 2025
+# Result Name: ssn_1
+# Project Name: Silicon_dating
+# Project Family: Virtex-7
+# Part: xc7vx690tffg1157
+# Temperature Grade: commercial
+# SSN Data Version: Production
+# Package Version: FINAL 2012-08-06
+# Package Pin Delay Version: VERS. 2.0 2012-08-06
+
+IO Bank,VCCO,Signal Name,Pin Number,IO Standard,Drive (mA),Slew Rate,OFFCHIP_TERM,Remaining Margin (%),Result, Notes
+16,1.8,debug_leds[2],AB31,LVCMOS18,12,SLOW,FP_VTT_50,91.4,PASS,
+16,1.8,debug_leds[3],AB32,LVCMOS18,12,SLOW,FP_VTT_50,91.4,PASS,
+16,1.8,debug_leds[4],U30,LVCMOS18,12,SLOW,FP_VTT_50,95.4,PASS,
+16,1.8,debug_leds[5],V33,LVCMOS18,12,SLOW,FP_VTT_50,91.4,PASS,
+16,1.8,debug_leds[6],V32,LVCMOS18,12,SLOW,FP_VTT_50,91.4,PASS,
+16,1.8,debug_leds[7],AC33,LVCMOS18,12,SLOW,FP_VTT_50,91.4,PASS,
+
+
+# Reference Links
+# Safe to Ignore SSN Failure on MIG Designs - http://www.xilinx.com/support/answers/36141.htm
+# SSN Mitigation Strategy - http://www.xilinx.com/support/documentation/user_guides/ug471_7Series_SelectIO.pdf#search=%22Mitigate%22
+# Off-chip Terminations - http://www.xilinx.com/support/documentation/user_guides/ug471_7Series_SelectIO.pdf#search=%22terminated%22

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Dec  4 23:56:44 2025
+# Process ID: 18464
+# Current directory: C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.runs/impl_1
+# Command line: vivado.exe -log silicon_dating_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source silicon_dating_top.tcl -notrace
+# Log file: C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.runs/impl_1/silicon_dating_top.vdi
+# Journal file: C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source silicon_dating_top.tcl -notrace

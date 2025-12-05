@@ -1,0 +1,1035 @@
+
+*** Running vivado
+    with args -log silicon_dating_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source silicon_dating_top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source silicon_dating_top.tcl -notrace
+Command: synth_design -top silicon_dating_top -part xc7vx690tffg1157-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23736 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 436.738 ; gain = 97.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'silicon_dating_top' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/silicon_dating_top.v:26]
+	Parameter N_NODES bound to: 4 - type: integer 
+	Parameter ID_W bound to: 4 - type: integer 
+	Parameter PREF_W bound to: 8 - type: integer 
+	Parameter DATA_W bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'person_node' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+	Parameter ID bound to: 0 - type: integer 
+	Parameter ID_W bound to: 4 - type: integer 
+	Parameter PREF_W bound to: 8 - type: integer 
+	Parameter DATE_LEN bound to: 64 - type: integer 
+	Parameter MY_ID bound to: 4'b0000 
+	Parameter S_IDLE bound to: 3'b000 
+	Parameter S_PRE_SEND bound to: 3'b001 
+	Parameter S_PRE_RECV bound to: 3'b010 
+	Parameter S_DATING bound to: 3'b011 
+	Parameter S_COUPLED bound to: 3'b100 
+WARNING: [Synth 8-6014] Unused sequential element partner_id_latched_reg was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'person_node' (1#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+INFO: [Synth 8-6157] synthesizing module 'person_node__parameterized0' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter ID_W bound to: 4 - type: integer 
+	Parameter PREF_W bound to: 8 - type: integer 
+	Parameter DATE_LEN bound to: 64 - type: integer 
+	Parameter MY_ID bound to: 4'b0001 
+	Parameter S_IDLE bound to: 3'b000 
+	Parameter S_PRE_SEND bound to: 3'b001 
+	Parameter S_PRE_RECV bound to: 3'b010 
+	Parameter S_DATING bound to: 3'b011 
+	Parameter S_COUPLED bound to: 3'b100 
+WARNING: [Synth 8-6014] Unused sequential element partner_id_latched_reg was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'person_node__parameterized0' (1#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+INFO: [Synth 8-6157] synthesizing module 'person_node__parameterized1' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+	Parameter ID bound to: 2 - type: integer 
+	Parameter ID_W bound to: 4 - type: integer 
+	Parameter PREF_W bound to: 8 - type: integer 
+	Parameter DATE_LEN bound to: 64 - type: integer 
+	Parameter MY_ID bound to: 4'b0010 
+	Parameter S_IDLE bound to: 3'b000 
+	Parameter S_PRE_SEND bound to: 3'b001 
+	Parameter S_PRE_RECV bound to: 3'b010 
+	Parameter S_DATING bound to: 3'b011 
+	Parameter S_COUPLED bound to: 3'b100 
+WARNING: [Synth 8-6014] Unused sequential element partner_id_latched_reg was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'person_node__parameterized1' (1#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+INFO: [Synth 8-6157] synthesizing module 'person_node__parameterized2' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+	Parameter ID bound to: 3 - type: integer 
+	Parameter ID_W bound to: 4 - type: integer 
+	Parameter PREF_W bound to: 8 - type: integer 
+	Parameter DATE_LEN bound to: 64 - type: integer 
+	Parameter MY_ID bound to: 4'b0011 
+	Parameter S_IDLE bound to: 3'b000 
+	Parameter S_PRE_SEND bound to: 3'b001 
+	Parameter S_PRE_RECV bound to: 3'b010 
+	Parameter S_DATING bound to: 3'b011 
+	Parameter S_COUPLED bound to: 3'b100 
+WARNING: [Synth 8-6014] Unused sequential element partner_id_latched_reg was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'person_node__parameterized2' (1#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:26]
+INFO: [Synth 8-6157] synthesizing module 'task_master' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/task_master.v:26]
+	Parameter N_NODES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'task_master' (2#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/task_master.v:26]
+INFO: [Synth 8-6157] synthesizing module 'cupid_core' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:26]
+	Parameter N_NODES bound to: 4 - type: integer 
+	Parameter ID_W bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element found_pair_reg was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:112]
+WARNING: [Synth 8-6014] Unused sequential element sel_i_reg was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:113]
+WARNING: [Synth 8-6014] Unused sequential element sel_j_reg was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'cupid_core' (3#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:26]
+INFO: [Synth 8-6157] synthesizing module 'wormhole_fabric' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/wormhole_fabric.v:26]
+	Parameter N_NODES bound to: 4 - type: integer 
+	Parameter ID_W bound to: 4 - type: integer 
+	Parameter PREF_W bound to: 8 - type: integer 
+	Parameter DATA_W bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'wormhole_fabric' (4#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/wormhole_fabric.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'silicon_dating_top' (5#1) [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/silicon_dating_top.v:26]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port clk_async
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port partner_id_cupid[3]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port partner_id_cupid[2]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port partner_id_cupid[1]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port partner_id_cupid[0]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port breakup_reason_from_cupid[3]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port breakup_reason_from_cupid[2]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port breakup_reason_from_cupid[1]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port breakup_reason_from_cupid[0]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port wh_rx_data[11]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port wh_rx_data[10]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port wh_rx_data[9]
+WARNING: [Synth 8-3331] design person_node__parameterized2 has unconnected port wh_rx_data[8]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port clk_async
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port partner_id_cupid[3]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port partner_id_cupid[2]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port partner_id_cupid[1]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port partner_id_cupid[0]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port breakup_reason_from_cupid[3]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port breakup_reason_from_cupid[2]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port breakup_reason_from_cupid[1]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port breakup_reason_from_cupid[0]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port wh_rx_data[11]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port wh_rx_data[10]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port wh_rx_data[9]
+WARNING: [Synth 8-3331] design person_node__parameterized1 has unconnected port wh_rx_data[8]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port clk_async
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port partner_id_cupid[3]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port partner_id_cupid[2]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port partner_id_cupid[1]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port partner_id_cupid[0]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port breakup_reason_from_cupid[3]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port breakup_reason_from_cupid[2]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port breakup_reason_from_cupid[1]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port breakup_reason_from_cupid[0]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port wh_rx_data[11]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port wh_rx_data[10]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port wh_rx_data[9]
+WARNING: [Synth 8-3331] design person_node__parameterized0 has unconnected port wh_rx_data[8]
+WARNING: [Synth 8-3331] design person_node has unconnected port clk_async
+WARNING: [Synth 8-3331] design person_node has unconnected port partner_id_cupid[3]
+WARNING: [Synth 8-3331] design person_node has unconnected port partner_id_cupid[2]
+WARNING: [Synth 8-3331] design person_node has unconnected port partner_id_cupid[1]
+WARNING: [Synth 8-3331] design person_node has unconnected port partner_id_cupid[0]
+WARNING: [Synth 8-3331] design person_node has unconnected port breakup_reason_from_cupid[3]
+WARNING: [Synth 8-3331] design person_node has unconnected port breakup_reason_from_cupid[2]
+WARNING: [Synth 8-3331] design person_node has unconnected port breakup_reason_from_cupid[1]
+WARNING: [Synth 8-3331] design person_node has unconnected port breakup_reason_from_cupid[0]
+WARNING: [Synth 8-3331] design person_node has unconnected port wh_rx_data[11]
+WARNING: [Synth 8-3331] design person_node has unconnected port wh_rx_data[10]
+WARNING: [Synth 8-3331] design person_node has unconnected port wh_rx_data[9]
+WARNING: [Synth 8-3331] design person_node has unconnected port wh_rx_data[8]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[63]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[62]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[61]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[60]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[59]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[58]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[57]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[56]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[55]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[54]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[53]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[52]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[51]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[50]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[49]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[48]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[47]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[46]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[45]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[44]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[43]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[42]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[41]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[40]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[39]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[38]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[37]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[36]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[35]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[34]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[33]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[32]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[31]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[30]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[29]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[28]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[27]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[26]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[25]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[24]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[23]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[22]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[21]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[20]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[19]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[18]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[17]
+WARNING: [Synth 8-3331] design cupid_core has unconnected port node_clk_est_flat[16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 495.770 ; gain = 156.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 495.770 ; gain = 156.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 495.770 ; gain = 156.121
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/constrs_1/new/abc.xdc]
+Finished Parsing XDC File [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/constrs_1/new/abc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/constrs_1/new/abc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/silicon_dating_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/silicon_dating_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1059.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.195 ; gain = 719.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.195 ; gain = 719.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1059.195 ; gain = 719.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'route_dst_id_reg[0][3:0]' into 'partner_id_to_node_reg[0][3:0]' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+INFO: [Synth 8-4471] merging register 'route_dst_id_reg[1][3:0]' into 'partner_id_to_node_reg[1][3:0]' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+INFO: [Synth 8-4471] merging register 'route_dst_id_reg[2][3:0]' into 'partner_id_to_node_reg[2][3:0]' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+INFO: [Synth 8-4471] merging register 'route_dst_id_reg[3][3:0]' into 'partner_id_to_node_reg[3][3:0]' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+WARNING: [Synth 8-6014] Unused sequential element route_dst_id_reg[0] was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+WARNING: [Synth 8-6014] Unused sequential element route_dst_id_reg[1] was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+WARNING: [Synth 8-6014] Unused sequential element route_dst_id_reg[2] was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+WARNING: [Synth 8-6014] Unused sequential element route_dst_id_reg[3] was removed.  [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:97]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:129]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:129]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:129]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:129]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:129]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/cupid_core.v:129]
+INFO: [Synth 8-5544] ROM "partner_id_to_node_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "partner_id_to_node_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "partner_id_to_node_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "partner_id_to_node_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dst_data_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dst_data_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dst_data_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dst_data_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'person_node'
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dating_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "free_to_cupid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'person_node__parameterized0'
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dating_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "free_to_cupid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'person_node__parameterized1'
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dating_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "free_to_cupid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'person_node__parameterized2'
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dating_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "free_to_cupid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+              S_PRE_SEND |                              001 |                              001
+              S_PRE_RECV |                              010 |                              010
+                S_DATING |                              011 |                              011
+               S_COUPLED |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'person_node'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+              S_PRE_SEND |                              001 |                              001
+              S_PRE_RECV |                              010 |                              010
+                S_DATING |                              011 |                              011
+               S_COUPLED |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'person_node__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+              S_PRE_SEND |                              001 |                              001
+              S_PRE_RECV |                              010 |                              010
+                S_DATING |                              011 |                              011
+               S_COUPLED |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'person_node__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+              S_PRE_SEND |                              001 |                              001
+              S_PRE_RECV |                              010 |                              010
+                S_DATING |                              011 |                              011
+               S_COUPLED |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'person_node__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1059.195 ; gain = 719.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 21    
+	   2 Input      7 Bit       Adders := 4     
+	   8 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
++---Registers : 
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 8     
+	                8 Bit    Registers := 29    
+	                4 Bit    Registers := 18    
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 36    
+	   2 Input      8 Bit        Muxes := 20    
+	   5 Input      8 Bit        Muxes := 12    
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 19    
+	   5 Input      4 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 20    
+	   2 Input      2 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 94    
+	   3 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 56    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module silicon_dating_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module task_master 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+Module cupid_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 6     
++---Registers : 
+	                4 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 4     
+Module wormhole_fabric 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 36    
+	   2 Input      4 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 40    
+Module person_node 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 14    
+Module person_node__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 14    
+Module person_node__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 14    
+Module person_node__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "working" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[2].u_person_node/my_pref_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/my_pref_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[0].u_person_node/my_pref_reg[2] )
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[11]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[10]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[8]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[0]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/wh_tx_data_reg[8]' (FDCE) to 'GEN_NODES[1].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/wh_tx_data_reg[0]' (FDCE) to 'GEN_NODES[1].u_person_node/wh_tx_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[11]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[10]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[9]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[8]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[0]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_cupid_core/partner_id_to_node_reg[3][2]' (FDCE) to 'u_cupid_core/partner_id_to_node_reg[3][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cupid_core/partner_id_to_node_reg[3][3] )
+INFO: [Synth 8-3886] merging instance 'u_cupid_core/partner_id_to_node_reg[2][2]' (FDCE) to 'u_cupid_core/partner_id_to_node_reg[2][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cupid_core/partner_id_to_node_reg[2][3] )
+INFO: [Synth 8-3886] merging instance 'u_cupid_core/partner_id_to_node_reg[1][2]' (FDCE) to 'u_cupid_core/partner_id_to_node_reg[1][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cupid_core/partner_id_to_node_reg[1][3] )
+INFO: [Synth 8-3886] merging instance 'u_cupid_core/partner_id_to_node_reg[0][2]' (FDCE) to 'u_cupid_core/partner_id_to_node_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cupid_core/partner_id_to_node_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[2].u_person_node/latency_est_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[0].u_person_node/latency_est_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[1].u_person_node/latency_est_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/my_pref_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_NODES[3].u_person_node/latency_est_reg[7] )
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[2][7]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[2][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_wormhole_fabric/dst_data_reg[2][6] )
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[1][7]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[1][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_wormhole_fabric/dst_data_reg[1][6] )
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[0][7]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[0][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_wormhole_fabric/dst_data_reg[0][6] )
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/wh_tx_data_reg[9]' (FDCE) to 'GEN_NODES[3].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/wh_tx_data_reg[8]' (FDCE) to 'GEN_NODES[3].u_person_node/wh_tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/wh_tx_data_reg[0]' (FDCE) to 'GEN_NODES[3].u_person_node/wh_tx_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/wh_tx_data_reg[4]' (FDCE) to 'GEN_NODES[3].u_person_node/wh_tx_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[9]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[4]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/wh_tx_data_reg[4]' (FDCE) to 'GEN_NODES[1].u_person_node/wh_tx_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[4]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/wh_tx_data_reg[5]' (FDCE) to 'GEN_NODES[3].u_person_node/wh_tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[5]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/wh_tx_data_reg[5]' (FDCE) to 'GEN_NODES[1].u_person_node/wh_tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[5]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/wh_tx_data_reg[3]' (FDCE) to 'GEN_NODES[3].u_person_node/wh_tx_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[3]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/wh_tx_data_reg[3]' (FDCE) to 'GEN_NODES[1].u_person_node/wh_tx_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/wh_tx_data_reg[3]' (FDCE) to 'GEN_NODES[0].u_person_node/wh_tx_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/wh_tx_data_reg[1]' (FDCE) to 'GEN_NODES[3].u_person_node/wh_tx_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/wh_tx_data_reg[1]' (FDCE) to 'GEN_NODES[2].u_person_node/wh_tx_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[2][4]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[2][5]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[2][3]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[1][4]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[1][5]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[1][3]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[0][4]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[0][5]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[0][3]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[3][4]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[3][5]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_wormhole_fabric/dst_data_reg[3][3]' (FDCE) to 'u_wormhole_fabric/dst_data_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/partner_pref_latched_reg[4]' (FDCE) to 'GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/partner_pref_latched_reg[5]' (FDCE) to 'GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[2].u_person_node/partner_pref_latched_reg[3]' (FDCE) to 'GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/partner_pref_latched_reg[4]' (FDCE) to 'GEN_NODES[1].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/partner_pref_latched_reg[5]' (FDCE) to 'GEN_NODES[1].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[1].u_person_node/partner_pref_latched_reg[3]' (FDCE) to 'GEN_NODES[1].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/partner_pref_latched_reg[4]' (FDCE) to 'GEN_NODES[0].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/partner_pref_latched_reg[5]' (FDCE) to 'GEN_NODES[0].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[0].u_person_node/partner_pref_latched_reg[3]' (FDCE) to 'GEN_NODES[0].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/partner_pref_latched_reg[4]' (FDCE) to 'GEN_NODES[3].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/partner_pref_latched_reg[5]' (FDCE) to 'GEN_NODES[3].u_person_node/partner_pref_latched_reg[2]'
+INFO: [Synth 8-3886] merging instance 'GEN_NODES[3].u_person_node/partner_pref_latched_reg[3]' (FDCE) to 'GEN_NODES[3].u_person_node/partner_pref_latched_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/partner_id_to_node_reg[0][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/partner_id_to_node_reg[1][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/partner_id_to_node_reg[2][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/partner_id_to_node_reg[3][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[0][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[0][2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[0][1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[0][0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[1][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[1][2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[1][1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[1][0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[2][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[2][2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[2][1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[2][0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[3][3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[3][2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[3][1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_cupid_core/breakup_reason_to_node_reg[3][0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[0][11]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[0][10]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[0][9]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[0][8]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[0][6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[1][11]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[1][10]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[1][9]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[1][8]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[1][6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[2][11]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[2][10]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[2][9]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[2][8]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[2][6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[3][11]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[3][10]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[3][9]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[3][8]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[3][7]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (u_wormhole_fabric/dst_data_reg[3][6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[7]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[5]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[4]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[7]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[7]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[6]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[6]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[5]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[5]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[4]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[4]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[3]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[3]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[2]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[2]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[1]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[1]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/error_counters_reg[0]__0) is unused and will be removed from module silicon_dating_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[0].u_person_node/error_counters_reg[0]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[7]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[5]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[4]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/latency_est_reg[0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[7]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[5]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[4]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/my_pref_reg[0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/partner_pref_latched_reg[7]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/partner_pref_latched_reg[6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/task_done_reg) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/dating_status_to_cupid_reg[3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/dating_status_to_cupid_reg[2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/dating_status_to_cupid_reg[1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/dating_status_to_cupid_reg[0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[15]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[14]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[13]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[12]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[11]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[10]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[9]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[8]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[7]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[5]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[4]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[3]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[2]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/clk_est_reg[0]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/wh_tx_data_reg[7]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/wh_tx_data_reg[6]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[0].u_person_node/wh_tx_data_reg[1]) is unused and will be removed from module silicon_dating_top.
+WARNING: [Synth 8-3332] Sequential element (GEN_NODES[1].u_person_node/error_counters_reg[7]) is unused and will be removed from module silicon_dating_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[7]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[6]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[5]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[4]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[3]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[2]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[1]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[1].u_person_node/error_counters_reg[0]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[7]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[6]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[5]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[4]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[3]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[2]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[1]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[2].u_person_node/error_counters_reg[0]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[7]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[6]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[5]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[4]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[3]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[2]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[1]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'GEN_NODES[3].u_person_node/error_counters_reg[0]__0/Q' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sources_1/new/person_node.v:110]
+INFO: [Synth 8-3886] merging instance 'u_cupid_core/initiator_flag_to_node_reg[0]' (FDC) to 'u_cupid_core/pair_valid_to_node_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cupid_core/initiator_flag_to_node_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1059.195 ; gain = 719.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1059.195 ; gain = 719.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1059.195 ; gain = 719.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     3|
+|3     |LUT1   |     3|
+|4     |LUT2   |    35|
+|5     |LUT3   |    53|
+|6     |LUT4   |    68|
+|7     |LUT5   |    58|
+|8     |LUT6   |    95|
+|9     |FDCE   |   187|
+|10    |FDPE   |     4|
+|11    |IBUF   |     2|
+|12    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------------+------+
+|      |Instance                       |Module                      |Cells |
++------+-------------------------------+----------------------------+------+
+|1     |top                            |                            |   517|
+|2     |  \GEN_NODES[0].u_person_node  |person_node                 |    96|
+|3     |  \GEN_NODES[1].u_person_node  |person_node__parameterized0 |    94|
+|4     |  \GEN_NODES[2].u_person_node  |person_node__parameterized1 |   104|
+|5     |  \GEN_NODES[3].u_person_node  |person_node__parameterized2 |   104|
+|6     |  u_cupid_core                 |cupid_core                  |    43|
+|7     |  u_task_master                |task_master                 |    31|
+|8     |  u_wormhole_fabric            |wormhole_fabric             |    26|
++------+-------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 477 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1065.234 ; gain = 162.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.234 ; gain = 725.586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+225 Infos, 211 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:01:00 . Memory (MB): peak = 1072.145 ; gain = 744.531
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.runs/synth_1/silicon_dating_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file silicon_dating_top_utilization_synth.rpt -pb silicon_dating_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.596 . Memory (MB): peak = 1072.145 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 23:29:44 2025...

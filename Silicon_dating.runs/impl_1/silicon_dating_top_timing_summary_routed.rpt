@@ -1,0 +1,2366 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec  4 23:48:53 2025
+| Host         : HOFUD running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file silicon_dating_top_timing_summary_routed.rpt -pb silicon_dating_top_timing_summary_routed.pb -rpx silicon_dating_top_timing_summary_routed.rpx -warn_on_violation
+| Design       : silicon_dating_top
+| Device       : 7vx690t-ffg1157
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 8 ports with partial output delay specified. (HIGH)
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      6.446        0.000                      0                  478        0.114        0.000                      0                  486        4.600        0.000                       0                   192  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock    Waveform(ns)       Period(ns)      Frequency(MHz)
+-----    ------------       ----------      --------------
+clk_gbl  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_gbl             6.446        0.000                      0                  287        0.114        0.000                      0                  295        4.600        0.000                       0                   192  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  clk_gbl            clk_gbl                  7.035        0.000                      0                  191        0.155        0.000                      0                  191  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_gbl
+  To Clock:  clk_gbl
+
+Setup :            0  Failing Endpoints,  Worst Slack        6.446ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.114ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.600ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             6.446ns  (required time - arrival time)
+  Source:                 u_wormhole_fabric/dst_valid_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_wormhole_fabric/dst_data_reg[1][2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        3.525ns  (logic 0.388ns (11.006%)  route 3.137ns (88.994%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.526ns = ( 13.526 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.929ns
+    Clock Pessimism Removal (CPR):    0.376ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.487     3.929    u_wormhole_fabric/CLK
+    SLICE_X50Y331        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y331        FDCE (Prop_fdce_C_Q)         0.259     4.188 f  u_wormhole_fabric/dst_valid_reg[2]/Q
+                         net (fo=14, routed)          1.487     5.675    u_wormhole_fabric/wh_dst_valid[2]
+    SLICE_X53Y330        LUT5 (Prop_lut5_I1_O)        0.043     5.718 r  u_wormhole_fabric/src_ready[0]_i_2/O
+                         net (fo=5, routed)           0.762     6.481    u_wormhole_fabric/p_7_out[0]
+    SLICE_X53Y329        LUT6 (Prop_lut6_I3_O)        0.043     6.524 r  u_wormhole_fabric/dst_valid[1]_i_2/O
+                         net (fo=2, routed)           0.888     7.412    u_wormhole_fabric/dst_valid[1]_i_2_n_0
+    SLICE_X51Y327        LUT3 (Prop_lut3_I1_O)        0.043     7.455 r  u_wormhole_fabric/dst_data[1][2]_i_1/O
+                         net (fo=1, routed)           0.000     7.455    u_wormhole_fabric/dst_data[1][2]_i_1_n_0
+    SLICE_X51Y327        FDCE                                         r  u_wormhole_fabric/dst_data_reg[1][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.311    13.526    u_wormhole_fabric/CLK
+    SLICE_X51Y327        FDCE                                         r  u_wormhole_fabric/dst_data_reg[1][2]/C
+                         clock pessimism              0.376    13.902    
+                         clock uncertainty           -0.035    13.867    
+    SLICE_X51Y327        FDCE (Setup_fdce_C_D)        0.034    13.901    u_wormhole_fabric/dst_data_reg[1][2]
+  -------------------------------------------------------------------
+                         required time                         13.901    
+                         arrival time                          -7.455    
+  -------------------------------------------------------------------
+                         slack                                  6.446    
+
+Slack (MET) :             6.460ns  (required time - arrival time)
+  Source:                 u_wormhole_fabric/dst_valid_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_wormhole_fabric/dst_valid_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        3.535ns  (logic 0.398ns (11.257%)  route 3.137ns (88.743%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.526ns = ( 13.526 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.929ns
+    Clock Pessimism Removal (CPR):    0.376ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.487     3.929    u_wormhole_fabric/CLK
+    SLICE_X50Y331        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y331        FDCE (Prop_fdce_C_Q)         0.259     4.188 f  u_wormhole_fabric/dst_valid_reg[2]/Q
+                         net (fo=14, routed)          1.487     5.675    u_wormhole_fabric/wh_dst_valid[2]
+    SLICE_X53Y330        LUT5 (Prop_lut5_I1_O)        0.043     5.718 r  u_wormhole_fabric/src_ready[0]_i_2/O
+                         net (fo=5, routed)           0.762     6.481    u_wormhole_fabric/p_7_out[0]
+    SLICE_X53Y329        LUT6 (Prop_lut6_I3_O)        0.043     6.524 r  u_wormhole_fabric/dst_valid[1]_i_2/O
+                         net (fo=2, routed)           0.888     7.412    u_wormhole_fabric/dst_valid[1]_i_2_n_0
+    SLICE_X51Y327        LUT3 (Prop_lut3_I2_O)        0.053     7.465 r  u_wormhole_fabric/dst_valid[1]_i_1/O
+                         net (fo=1, routed)           0.000     7.465    u_wormhole_fabric/dst_valid[1]_i_1_n_0
+    SLICE_X51Y327        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.311    13.526    u_wormhole_fabric/CLK
+    SLICE_X51Y327        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[1]/C
+                         clock pessimism              0.376    13.902    
+                         clock uncertainty           -0.035    13.867    
+    SLICE_X51Y327        FDCE (Setup_fdce_C_D)        0.058    13.925    u_wormhole_fabric/dst_valid_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.925    
+                         arrival time                          -7.465    
+  -------------------------------------------------------------------
+                         slack                                  6.460    
+
+Slack (MET) :             6.538ns  (required time - arrival time)
+  Source:                 u_wormhole_fabric/dst_valid_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_wormhole_fabric/dst_data_reg[2][2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        3.438ns  (logic 0.635ns (18.469%)  route 2.803ns (81.531%))
+  Logic Levels:           4  (LUT2=1 LUT3=1 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.530ns = ( 13.530 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.929ns
+    Clock Pessimism Removal (CPR):    0.378ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.487     3.929    u_wormhole_fabric/CLK
+    SLICE_X50Y331        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y331        FDCE (Prop_fdce_C_Q)         0.259     4.188 f  u_wormhole_fabric/dst_valid_reg[2]/Q
+                         net (fo=14, routed)          1.314     5.503    u_cupid_core/wh_dst_valid[2]
+    SLICE_X52Y328        LUT4 (Prop_lut4_I3_O)        0.053     5.556 f  u_cupid_core/dst_valid[2]_i_3/O
+                         net (fo=3, routed)           0.432     5.988    GEN_NODES[1].u_person_node/wh_tx_valid_reg_0
+    SLICE_X52Y331        LUT2 (Prop_lut2_I1_O)        0.146     6.134 r  GEN_NODES[1].u_person_node/dst_data[2][2]_i_5/O
+                         net (fo=1, routed)           0.254     6.387    u_cupid_core/wh_tx_data_reg[2]
+    SLICE_X52Y331        LUT6 (Prop_lut6_I4_O)        0.134     6.521 r  u_cupid_core/dst_data[2][2]_i_2/O
+                         net (fo=1, routed)           0.803     7.324    u_cupid_core/dst_data[2][2]_i_2_n_0
+    SLICE_X51Y331        LUT3 (Prop_lut3_I0_O)        0.043     7.367 r  u_cupid_core/dst_data[2][2]_i_1/O
+                         net (fo=1, routed)           0.000     7.367    u_wormhole_fabric/dst_data_reg[2][2]_0
+    SLICE_X51Y331        FDCE                                         r  u_wormhole_fabric/dst_data_reg[2][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.315    13.530    u_wormhole_fabric/CLK
+    SLICE_X51Y331        FDCE                                         r  u_wormhole_fabric/dst_data_reg[2][2]/C
+                         clock pessimism              0.378    13.908    
+                         clock uncertainty           -0.035    13.873    
+    SLICE_X51Y331        FDCE (Setup_fdce_C_D)        0.033    13.906    u_wormhole_fabric/dst_data_reg[2][2]
+  -------------------------------------------------------------------
+                         required time                         13.906    
+                         arrival time                          -7.367    
+  -------------------------------------------------------------------
+                         slack                                  6.538    
+
+Slack (MET) :             6.665ns  (required time - arrival time)
+  Source:                 GEN_NODES[0].u_person_node/dating_busy_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/pair_valid_to_node_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        3.260ns  (logic 0.412ns (12.636%)  route 2.848ns (87.364%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.531ns = ( 13.531 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.910ns
+    Clock Pessimism Removal (CPR):    0.350ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.468     3.910    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y327        FDCE                                         r  GEN_NODES[0].u_person_node/dating_busy_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y327        FDCE (Prop_fdce_C_Q)         0.223     4.133 f  GEN_NODES[0].u_person_node/dating_busy_reg/Q
+                         net (fo=8, routed)           0.917     5.050    GEN_NODES[0].u_person_node/dating_busy[0]
+    SLICE_X50Y327        LUT3 (Prop_lut3_I2_O)        0.051     5.101 r  GEN_NODES[0].u_person_node/partner_id_to_node[2][0]_i_2/O
+                         net (fo=6, routed)           1.221     6.322    GEN_NODES[3].u_person_node/free_to_cupid_reg_4
+    SLICE_X52Y333        LUT6 (Prop_lut6_I0_O)        0.138     6.460 r  GEN_NODES[3].u_person_node/pair_valid_to_node[2]_i_1/O
+                         net (fo=3, routed)           0.710     7.171    u_cupid_core/free_to_cupid_reg[1]
+    SLICE_X51Y332        FDCE                                         r  u_cupid_core/pair_valid_to_node_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.316    13.531    u_cupid_core/CLK
+    SLICE_X51Y332        FDCE                                         r  u_cupid_core/pair_valid_to_node_reg[2]/C
+                         clock pessimism              0.350    13.881    
+                         clock uncertainty           -0.035    13.846    
+    SLICE_X51Y332        FDCE (Setup_fdce_C_D)       -0.010    13.836    u_cupid_core/pair_valid_to_node_reg[2]
+  -------------------------------------------------------------------
+                         required time                         13.836    
+                         arrival time                          -7.171    
+  -------------------------------------------------------------------
+                         slack                                  6.665    
+
+Slack (MET) :             6.950ns  (required time - arrival time)
+  Source:                 u_wormhole_fabric/dst_valid_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_wormhole_fabric/dst_valid_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        3.080ns  (logic 0.625ns (20.295%)  route 2.455ns (79.705%))
+  Logic Levels:           4  (LUT3=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.530ns = ( 13.530 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.929ns
+    Clock Pessimism Removal (CPR):    0.399ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.487     3.929    u_wormhole_fabric/CLK
+    SLICE_X50Y331        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y331        FDCE (Prop_fdce_C_Q)         0.259     4.188 f  u_wormhole_fabric/dst_valid_reg[2]/Q
+                         net (fo=14, routed)          1.036     5.224    u_cupid_core/wh_dst_valid[2]
+    SLICE_X52Y332        LUT4 (Prop_lut4_I2_O)        0.047     5.271 r  u_cupid_core/dst_data[2][2]_i_6/O
+                         net (fo=2, routed)           0.584     5.856    u_cupid_core/dst_data[2][2]_i_6_n_0
+    SLICE_X53Y331        LUT5 (Prop_lut5_I4_O)        0.140     5.996 f  u_cupid_core/dst_valid[2]_i_4/O
+                         net (fo=1, routed)           0.100     6.096    u_cupid_core/dst_valid[2]_i_4_n_0
+    SLICE_X53Y331        LUT5 (Prop_lut5_I1_O)        0.136     6.232 r  u_cupid_core/dst_valid[2]_i_2/O
+                         net (fo=2, routed)           0.734     6.966    u_wormhole_fabric/partner_id_to_node_reg[0][1]
+    SLICE_X50Y331        LUT3 (Prop_lut3_I2_O)        0.043     7.009 r  u_wormhole_fabric/dst_valid[2]_i_1/O
+                         net (fo=1, routed)           0.000     7.009    u_wormhole_fabric/dst_valid[2]_i_1_n_0
+    SLICE_X50Y331        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.315    13.530    u_wormhole_fabric/CLK
+    SLICE_X50Y331        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[2]/C
+                         clock pessimism              0.399    13.929    
+                         clock uncertainty           -0.035    13.894    
+    SLICE_X50Y331        FDCE (Setup_fdce_C_D)        0.065    13.959    u_wormhole_fabric/dst_valid_reg[2]
+  -------------------------------------------------------------------
+                         required time                         13.959    
+                         arrival time                          -7.009    
+  -------------------------------------------------------------------
+                         slack                                  6.950    
+
+Slack (MET) :             6.981ns  (required time - arrival time)
+  Source:                 GEN_NODES[0].u_person_node/dating_busy_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/partner_id_to_node_reg[2][1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        3.053ns  (logic 0.463ns (15.165%)  route 2.590ns (84.835%))
+  Logic Levels:           3  (LUT3=2 LUT6=1)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.518ns = ( 13.518 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.910ns
+    Clock Pessimism Removal (CPR):    0.375ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.468     3.910    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y327        FDCE                                         r  GEN_NODES[0].u_person_node/dating_busy_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y327        FDCE (Prop_fdce_C_Q)         0.223     4.133 f  GEN_NODES[0].u_person_node/dating_busy_reg/Q
+                         net (fo=8, routed)           0.917     5.050    GEN_NODES[0].u_person_node/dating_busy[0]
+    SLICE_X50Y327        LUT3 (Prop_lut3_I2_O)        0.051     5.101 r  GEN_NODES[0].u_person_node/partner_id_to_node[2][0]_i_2/O
+                         net (fo=6, routed)           1.221     6.322    GEN_NODES[3].u_person_node/free_to_cupid_reg_4
+    SLICE_X52Y333        LUT6 (Prop_lut6_I0_O)        0.138     6.460 r  GEN_NODES[3].u_person_node/pair_valid_to_node[2]_i_1/O
+                         net (fo=3, routed)           0.452     6.912    GEN_NODES[2].u_person_node/D[1]
+    SLICE_X52Y332        LUT3 (Prop_lut3_I1_O)        0.051     6.963 r  GEN_NODES[2].u_person_node/partner_id_to_node[2][1]_i_1/O
+                         net (fo=1, routed)           0.000     6.963    u_cupid_core/partner_id_to_node_reg[2][1]_0
+    SLICE_X52Y332        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[2][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.303    13.518    u_cupid_core/CLK
+    SLICE_X52Y332        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[2][1]/C
+                         clock pessimism              0.375    13.893    
+                         clock uncertainty           -0.035    13.858    
+    SLICE_X52Y332        FDCE (Setup_fdce_C_D)        0.086    13.944    u_cupid_core/partner_id_to_node_reg[2][1]
+  -------------------------------------------------------------------
+                         required time                         13.944    
+                         arrival time                          -6.963    
+  -------------------------------------------------------------------
+                         slack                                  6.981    
+
+Slack (MET) :             7.084ns  (required time - arrival time)
+  Source:                 GEN_NODES[3].u_person_node/couple_locked_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/partner_id_to_node_reg[0][1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        2.919ns  (logic 0.483ns (16.546%)  route 2.436ns (83.454%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.517ns = ( 13.517 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.918ns
+    Clock Pessimism Removal (CPR):    0.375ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.476     3.918    GEN_NODES[3].u_person_node/CLK
+    SLICE_X54Y334        FDCE                                         r  GEN_NODES[3].u_person_node/couple_locked_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y334        FDCE (Prop_fdce_C_Q)         0.259     4.177 f  GEN_NODES[3].u_person_node/couple_locked_reg/Q
+                         net (fo=16, routed)          1.000     5.177    GEN_NODES[2].u_person_node/couple_locked_reg_0[0]
+    SLICE_X51Y330        LUT6 (Prop_lut6_I4_O)        0.043     5.220 f  GEN_NODES[2].u_person_node/pair_valid_to_node[1]_i_2/O
+                         net (fo=3, routed)           0.337     5.557    GEN_NODES[0].u_person_node/dating_busy_reg_1
+    SLICE_X50Y327        LUT5 (Prop_lut5_I4_O)        0.047     5.604 r  GEN_NODES[0].u_person_node/pair_valid_to_node[0]_i_1/O
+                         net (fo=3, routed)           1.099     6.703    GEN_NODES[2].u_person_node/partner_id_to_node
+    SLICE_X52Y331        LUT3 (Prop_lut3_I1_O)        0.134     6.837 r  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_1/O
+                         net (fo=1, routed)           0.000     6.837    u_cupid_core/partner_id_to_node_reg[0][1]_0
+    SLICE_X52Y331        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.302    13.517    u_cupid_core/CLK
+    SLICE_X52Y331        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[0][1]/C
+                         clock pessimism              0.375    13.892    
+                         clock uncertainty           -0.035    13.857    
+    SLICE_X52Y331        FDCE (Setup_fdce_C_D)        0.065    13.922    u_cupid_core/partner_id_to_node_reg[0][1]
+  -------------------------------------------------------------------
+                         required time                         13.922    
+                         arrival time                          -6.837    
+  -------------------------------------------------------------------
+                         slack                                  7.084    
+
+Slack (MET) :             7.085ns  (required time - arrival time)
+  Source:                 GEN_NODES[3].u_person_node/couple_locked_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/partner_id_to_node_reg[0][0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        2.919ns  (logic 0.483ns (16.546%)  route 2.436ns (83.454%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.517ns = ( 13.517 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.918ns
+    Clock Pessimism Removal (CPR):    0.375ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.476     3.918    GEN_NODES[3].u_person_node/CLK
+    SLICE_X54Y334        FDCE                                         r  GEN_NODES[3].u_person_node/couple_locked_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y334        FDCE (Prop_fdce_C_Q)         0.259     4.177 f  GEN_NODES[3].u_person_node/couple_locked_reg/Q
+                         net (fo=16, routed)          1.000     5.177    GEN_NODES[2].u_person_node/couple_locked_reg_0[0]
+    SLICE_X51Y330        LUT6 (Prop_lut6_I4_O)        0.043     5.220 f  GEN_NODES[2].u_person_node/pair_valid_to_node[1]_i_2/O
+                         net (fo=3, routed)           0.337     5.557    GEN_NODES[0].u_person_node/dating_busy_reg_1
+    SLICE_X50Y327        LUT5 (Prop_lut5_I4_O)        0.047     5.604 r  GEN_NODES[0].u_person_node/pair_valid_to_node[0]_i_1/O
+                         net (fo=3, routed)           1.099     6.703    GEN_NODES[2].u_person_node/partner_id_to_node
+    SLICE_X52Y331        LUT3 (Prop_lut3_I1_O)        0.134     6.837 r  GEN_NODES[2].u_person_node/partner_id_to_node[0][0]_i_1/O
+                         net (fo=1, routed)           0.000     6.837    u_cupid_core/partner_id_to_node_reg[0][0]_0
+    SLICE_X52Y331        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.302    13.517    u_cupid_core/CLK
+    SLICE_X52Y331        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[0][0]/C
+                         clock pessimism              0.375    13.892    
+                         clock uncertainty           -0.035    13.857    
+    SLICE_X52Y331        FDCE (Setup_fdce_C_D)        0.066    13.923    u_cupid_core/partner_id_to_node_reg[0][0]
+  -------------------------------------------------------------------
+                         required time                         13.923    
+                         arrival time                          -6.837    
+  -------------------------------------------------------------------
+                         slack                                  7.085    
+
+Slack (MET) :             7.168ns  (required time - arrival time)
+  Source:                 GEN_NODES[0].u_person_node/dating_busy_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/partner_id_to_node_reg[3][1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        2.846ns  (logic 0.455ns (15.987%)  route 2.391ns (84.013%))
+  Logic Levels:           3  (LUT3=2 LUT6=1)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.518ns = ( 13.518 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.910ns
+    Clock Pessimism Removal (CPR):    0.375ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.468     3.910    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y327        FDCE                                         r  GEN_NODES[0].u_person_node/dating_busy_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y327        FDCE (Prop_fdce_C_Q)         0.223     4.133 f  GEN_NODES[0].u_person_node/dating_busy_reg/Q
+                         net (fo=8, routed)           0.917     5.050    GEN_NODES[0].u_person_node/dating_busy[0]
+    SLICE_X50Y327        LUT3 (Prop_lut3_I2_O)        0.051     5.101 r  GEN_NODES[0].u_person_node/partner_id_to_node[2][0]_i_2/O
+                         net (fo=6, routed)           1.221     6.322    GEN_NODES[3].u_person_node/free_to_cupid_reg_4
+    SLICE_X52Y333        LUT6 (Prop_lut6_I0_O)        0.138     6.460 r  GEN_NODES[3].u_person_node/pair_valid_to_node[2]_i_1/O
+                         net (fo=3, routed)           0.253     6.713    GEN_NODES[3].u_person_node/D[0]
+    SLICE_X52Y332        LUT3 (Prop_lut3_I0_O)        0.043     6.756 r  GEN_NODES[3].u_person_node/partner_id_to_node[3][1]_i_1/O
+                         net (fo=1, routed)           0.000     6.756    u_cupid_core/partner_id_to_node_reg[3][1]_0
+    SLICE_X52Y332        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[3][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.303    13.518    u_cupid_core/CLK
+    SLICE_X52Y332        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[3][1]/C
+                         clock pessimism              0.375    13.893    
+                         clock uncertainty           -0.035    13.858    
+    SLICE_X52Y332        FDCE (Setup_fdce_C_D)        0.066    13.924    u_cupid_core/partner_id_to_node_reg[3][1]
+  -------------------------------------------------------------------
+                         required time                         13.924    
+                         arrival time                          -6.756    
+  -------------------------------------------------------------------
+                         slack                                  7.168    
+
+Slack (MET) :             7.230ns  (required time - arrival time)
+  Source:                 GEN_NODES[3].u_person_node/couple_locked_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/partner_id_to_node_reg[1][1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        2.795ns  (logic 0.398ns (14.239%)  route 2.397ns (85.761%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.517ns = ( 13.517 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.918ns
+    Clock Pessimism Removal (CPR):    0.375ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.476     3.918    GEN_NODES[3].u_person_node/CLK
+    SLICE_X54Y334        FDCE                                         r  GEN_NODES[3].u_person_node/couple_locked_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y334        FDCE (Prop_fdce_C_Q)         0.259     4.177 f  GEN_NODES[3].u_person_node/couple_locked_reg/Q
+                         net (fo=16, routed)          1.000     5.177    GEN_NODES[2].u_person_node/couple_locked_reg_0[0]
+    SLICE_X51Y330        LUT6 (Prop_lut6_I4_O)        0.043     5.220 f  GEN_NODES[2].u_person_node/pair_valid_to_node[1]_i_2/O
+                         net (fo=3, routed)           0.339     5.559    GEN_NODES[0].u_person_node/dating_busy_reg_1
+    SLICE_X50Y327        LUT5 (Prop_lut5_I4_O)        0.043     5.602 r  GEN_NODES[0].u_person_node/pair_valid_to_node[1]_i_1/O
+                         net (fo=3, routed)           1.058     6.660    GEN_NODES[2].u_person_node/D[0]
+    SLICE_X52Y331        LUT3 (Prop_lut3_I1_O)        0.053     6.713 r  GEN_NODES[2].u_person_node/partner_id_to_node[1][1]_i_1/O
+                         net (fo=1, routed)           0.000     6.713    u_cupid_core/partner_id_to_node_reg[1][1]_0
+    SLICE_X52Y331        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[1][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.302    13.517    u_cupid_core/CLK
+    SLICE_X52Y331        FDCE                                         r  u_cupid_core/partner_id_to_node_reg[1][1]/C
+                         clock pessimism              0.375    13.892    
+                         clock uncertainty           -0.035    13.857    
+    SLICE_X52Y331        FDCE (Setup_fdce_C_D)        0.086    13.943    u_cupid_core/partner_id_to_node_reg[1][1]
+  -------------------------------------------------------------------
+                         required time                         13.943    
+                         arrival time                          -6.713    
+  -------------------------------------------------------------------
+                         slack                                  7.230    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.114ns  (arrival time - required time)
+  Source:                 GEN_NODES[3].u_person_node/dating_cnt_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[3].u_person_node/dating_cnt_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.320ns  (logic 0.146ns (45.605%)  route 0.174ns (54.395%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.119ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.070ns
+    Source Clock Delay      (SCD):    1.610ns
+    Clock Pessimism Removal (CPR):    0.341ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.754     1.610    GEN_NODES[3].u_person_node/CLK
+    SLICE_X52Y350        FDCE                                         r  GEN_NODES[3].u_person_node/dating_cnt_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X52Y350        FDCE (Prop_fdce_C_Q)         0.118     1.728 r  GEN_NODES[3].u_person_node/dating_cnt_reg[2]/Q
+                         net (fo=5, routed)           0.174     1.902    GEN_NODES[3].u_person_node/dating_cnt_reg_n_0_[2]
+    SLICE_X52Y349        LUT6 (Prop_lut6_I0_O)        0.028     1.930 r  GEN_NODES[3].u_person_node/dating_cnt[4]_i_1__2/O
+                         net (fo=1, routed)           0.000     1.930    GEN_NODES[3].u_person_node/dating_cnt[4]_i_1__2_n_0
+    SLICE_X52Y349        FDCE                                         r  GEN_NODES[3].u_person_node/dating_cnt_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.901     2.070    GEN_NODES[3].u_person_node/CLK
+    SLICE_X52Y349        FDCE                                         r  GEN_NODES[3].u_person_node/dating_cnt_reg[4]/C
+                         clock pessimism             -0.341     1.729    
+    SLICE_X52Y349        FDCE (Hold_fdce_C_D)         0.087     1.816    GEN_NODES[3].u_person_node/dating_cnt_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.816    
+                         arrival time                           1.930    
+  -------------------------------------------------------------------
+                         slack                                  0.114    
+
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 GEN_NODES[1].u_person_node/free_wait_cnt_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[1].u_person_node/free_wait_cnt_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.222ns  (logic 0.128ns (57.749%)  route 0.094ns (42.251%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.081ns
+    Source Clock Delay      (SCD):    1.541ns
+    Clock Pessimism Removal (CPR):    0.529ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.685     1.541    GEN_NODES[1].u_person_node/CLK
+    SLICE_X51Y309        FDCE                                         r  GEN_NODES[1].u_person_node/free_wait_cnt_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y309        FDCE (Prop_fdce_C_Q)         0.100     1.641 r  GEN_NODES[1].u_person_node/free_wait_cnt_reg[2]/Q
+                         net (fo=5, routed)           0.094     1.734    GEN_NODES[1].u_person_node/free_wait_cnt_reg_n_0_[2]
+    SLICE_X50Y309        LUT5 (Prop_lut5_I2_O)        0.028     1.762 r  GEN_NODES[1].u_person_node/free_wait_cnt[3]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.762    GEN_NODES[1].u_person_node/free_wait_cnt[3]_i_1__0_n_0
+    SLICE_X50Y309        FDCE                                         r  GEN_NODES[1].u_person_node/free_wait_cnt_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.912     2.081    GEN_NODES[1].u_person_node/CLK
+    SLICE_X50Y309        FDCE                                         r  GEN_NODES[1].u_person_node/free_wait_cnt_reg[3]/C
+                         clock pessimism             -0.529     1.552    
+    SLICE_X50Y309        FDCE (Hold_fdce_C_D)         0.087     1.639    GEN_NODES[1].u_person_node/free_wait_cnt_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.639    
+                         arrival time                           1.762    
+  -------------------------------------------------------------------
+                         slack                                  0.124    
+
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 GEN_NODES[3].u_person_node/free_wait_cnt_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[3].u_person_node/free_wait_cnt_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.222ns  (logic 0.128ns (57.749%)  route 0.094ns (42.251%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.060ns
+    Source Clock Delay      (SCD):    1.522ns
+    Clock Pessimism Removal (CPR):    0.527ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.666     1.522    GEN_NODES[3].u_person_node/CLK
+    SLICE_X55Y331        FDCE                                         r  GEN_NODES[3].u_person_node/free_wait_cnt_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y331        FDCE (Prop_fdce_C_Q)         0.100     1.622 r  GEN_NODES[3].u_person_node/free_wait_cnt_reg[2]/Q
+                         net (fo=5, routed)           0.094     1.715    GEN_NODES[3].u_person_node/free_wait_cnt_reg_n_0_[2]
+    SLICE_X54Y331        LUT5 (Prop_lut5_I2_O)        0.028     1.743 r  GEN_NODES[3].u_person_node/free_wait_cnt[3]_i_1__2/O
+                         net (fo=1, routed)           0.000     1.743    GEN_NODES[3].u_person_node/free_wait_cnt[3]_i_1__2_n_0
+    SLICE_X54Y331        FDCE                                         r  GEN_NODES[3].u_person_node/free_wait_cnt_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.891     2.060    GEN_NODES[3].u_person_node/CLK
+    SLICE_X54Y331        FDCE                                         r  GEN_NODES[3].u_person_node/free_wait_cnt_reg[3]/C
+                         clock pessimism             -0.527     1.533    
+    SLICE_X54Y331        FDCE (Hold_fdce_C_D)         0.087     1.620    GEN_NODES[3].u_person_node/free_wait_cnt_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.620    
+                         arrival time                           1.743    
+  -------------------------------------------------------------------
+                         slack                                  0.124    
+
+Slack (MET) :             0.125ns  (arrival time - required time)
+  Source:                 GEN_NODES[0].u_person_node/FSM_sequential_state_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/free_to_cupid_reg/D
+                            (rising edge-triggered cell FDPE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.223ns  (logic 0.128ns (57.289%)  route 0.095ns (42.711%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.056ns
+    Source Clock Delay      (SCD):    1.518ns
+    Clock Pessimism Removal (CPR):    0.527ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.662     1.518    GEN_NODES[0].u_person_node/CLK
+    SLICE_X53Y327        FDCE                                         r  GEN_NODES[0].u_person_node/FSM_sequential_state_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y327        FDCE (Prop_fdce_C_Q)         0.100     1.618 r  GEN_NODES[0].u_person_node/FSM_sequential_state_reg[2]/Q
+                         net (fo=15, routed)          0.095     1.713    GEN_NODES[0].u_person_node/state__0[2]
+    SLICE_X52Y327        LUT6 (Prop_lut6_I2_O)        0.028     1.741 r  GEN_NODES[0].u_person_node/free_to_cupid_i_1/O
+                         net (fo=1, routed)           0.000     1.741    GEN_NODES[0].u_person_node/free_to_cupid_i_1_n_0
+    SLICE_X52Y327        FDPE                                         r  GEN_NODES[0].u_person_node/free_to_cupid_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.887     2.056    GEN_NODES[0].u_person_node/CLK
+    SLICE_X52Y327        FDPE                                         r  GEN_NODES[0].u_person_node/free_to_cupid_reg/C
+                         clock pessimism             -0.527     1.529    
+    SLICE_X52Y327        FDPE (Hold_fdpe_C_D)         0.087     1.616    GEN_NODES[0].u_person_node/free_to_cupid_reg
+  -------------------------------------------------------------------
+                         required time                         -1.616    
+                         arrival time                           1.741    
+  -------------------------------------------------------------------
+                         slack                                  0.125    
+
+Slack (MET) :             0.132ns  (arrival time - required time)
+  Source:                 GEN_NODES[0].u_person_node/work_cnt_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/work_cnt_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.239ns  (logic 0.130ns (54.366%)  route 0.109ns (45.634%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.053ns
+    Source Clock Delay      (SCD):    1.516ns
+    Clock Pessimism Removal (CPR):    0.526ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.660     1.516    GEN_NODES[0].u_person_node/CLK
+    SLICE_X53Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y325        FDCE (Prop_fdce_C_Q)         0.100     1.616 r  GEN_NODES[0].u_person_node/work_cnt_reg[0]/Q
+                         net (fo=6, routed)           0.109     1.725    GEN_NODES[0].u_person_node/work_cnt_reg__0[0]
+    SLICE_X52Y325        LUT5 (Prop_lut5_I2_O)        0.030     1.755 r  GEN_NODES[0].u_person_node/work_cnt[3]_i_1/O
+                         net (fo=1, routed)           0.000     1.755    GEN_NODES[0].u_person_node/p_0_in[3]
+    SLICE_X52Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.884     2.053    GEN_NODES[0].u_person_node/CLK
+    SLICE_X52Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[3]/C
+                         clock pessimism             -0.526     1.527    
+    SLICE_X52Y325        FDCE (Hold_fdce_C_D)         0.096     1.623    GEN_NODES[0].u_person_node/work_cnt_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.623    
+                         arrival time                           1.755    
+  -------------------------------------------------------------------
+                         slack                                  0.132    
+
+Slack (MET) :             0.134ns  (arrival time - required time)
+  Source:                 GEN_NODES[3].u_person_node/working_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[3].u_person_node/work_cnt_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.241ns  (logic 0.132ns (54.770%)  route 0.109ns (45.230%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.058ns
+    Source Clock Delay      (SCD):    1.519ns
+    Clock Pessimism Removal (CPR):    0.528ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.663     1.519    GEN_NODES[3].u_person_node/CLK
+    SLICE_X57Y331        FDCE                                         r  GEN_NODES[3].u_person_node/working_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y331        FDCE (Prop_fdce_C_Q)         0.100     1.619 r  GEN_NODES[3].u_person_node/working_reg/Q
+                         net (fo=14, routed)          0.109     1.728    GEN_NODES[3].u_person_node/working_reg_n_0
+    SLICE_X56Y331        LUT5 (Prop_lut5_I3_O)        0.032     1.760 r  GEN_NODES[3].u_person_node/work_cnt[3]_i_1__2/O
+                         net (fo=1, routed)           0.000     1.760    GEN_NODES[3].u_person_node/p_0_in__2[3]
+    SLICE_X56Y331        FDCE                                         r  GEN_NODES[3].u_person_node/work_cnt_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.889     2.058    GEN_NODES[3].u_person_node/CLK
+    SLICE_X56Y331        FDCE                                         r  GEN_NODES[3].u_person_node/work_cnt_reg[3]/C
+                         clock pessimism             -0.528     1.530    
+    SLICE_X56Y331        FDCE (Hold_fdce_C_D)         0.096     1.626    GEN_NODES[3].u_person_node/work_cnt_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.626    
+                         arrival time                           1.760    
+  -------------------------------------------------------------------
+                         slack                                  0.134    
+
+Slack (MET) :             0.137ns  (arrival time - required time)
+  Source:                 GEN_NODES[3].u_person_node/working_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[3].u_person_node/work_cnt_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.235ns  (logic 0.128ns (54.466%)  route 0.107ns (45.534%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.058ns
+    Source Clock Delay      (SCD):    1.519ns
+    Clock Pessimism Removal (CPR):    0.528ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.663     1.519    GEN_NODES[3].u_person_node/CLK
+    SLICE_X57Y331        FDCE                                         r  GEN_NODES[3].u_person_node/working_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y331        FDCE (Prop_fdce_C_Q)         0.100     1.619 r  GEN_NODES[3].u_person_node/working_reg/Q
+                         net (fo=14, routed)          0.107     1.726    GEN_NODES[3].u_person_node/working_reg_n_0
+    SLICE_X56Y331        LUT3 (Prop_lut3_I2_O)        0.028     1.754 r  GEN_NODES[3].u_person_node/work_cnt[1]_i_1__2/O
+                         net (fo=1, routed)           0.000     1.754    GEN_NODES[3].u_person_node/p_0_in__2[1]
+    SLICE_X56Y331        FDCE                                         r  GEN_NODES[3].u_person_node/work_cnt_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.889     2.058    GEN_NODES[3].u_person_node/CLK
+    SLICE_X56Y331        FDCE                                         r  GEN_NODES[3].u_person_node/work_cnt_reg[1]/C
+                         clock pessimism             -0.528     1.530    
+    SLICE_X56Y331        FDCE (Hold_fdce_C_D)         0.087     1.617    GEN_NODES[3].u_person_node/work_cnt_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.617    
+                         arrival time                           1.754    
+  -------------------------------------------------------------------
+                         slack                                  0.137    
+
+Slack (MET) :             0.139ns  (arrival time - required time)
+  Source:                 GEN_NODES[3].u_person_node/working_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[3].u_person_node/work_cnt_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.237ns  (logic 0.128ns (54.007%)  route 0.109ns (45.993%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.058ns
+    Source Clock Delay      (SCD):    1.519ns
+    Clock Pessimism Removal (CPR):    0.528ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.663     1.519    GEN_NODES[3].u_person_node/CLK
+    SLICE_X57Y331        FDCE                                         r  GEN_NODES[3].u_person_node/working_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y331        FDCE (Prop_fdce_C_Q)         0.100     1.619 f  GEN_NODES[3].u_person_node/working_reg/Q
+                         net (fo=14, routed)          0.109     1.728    GEN_NODES[3].u_person_node/working_reg_n_0
+    SLICE_X56Y331        LUT4 (Prop_lut4_I3_O)        0.028     1.756 r  GEN_NODES[3].u_person_node/work_cnt[2]_i_1__2/O
+                         net (fo=1, routed)           0.000     1.756    GEN_NODES[3].u_person_node/p_0_in__2[2]
+    SLICE_X56Y331        FDCE                                         r  GEN_NODES[3].u_person_node/work_cnt_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.889     2.058    GEN_NODES[3].u_person_node/CLK
+    SLICE_X56Y331        FDCE                                         r  GEN_NODES[3].u_person_node/work_cnt_reg[2]/C
+                         clock pessimism             -0.528     1.530    
+    SLICE_X56Y331        FDCE (Hold_fdce_C_D)         0.087     1.617    GEN_NODES[3].u_person_node/work_cnt_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.617    
+                         arrival time                           1.756    
+  -------------------------------------------------------------------
+                         slack                                  0.139    
+
+Slack (MET) :             0.139ns  (arrival time - required time)
+  Source:                 GEN_NODES[0].u_person_node/work_cnt_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/work_cnt_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.237ns  (logic 0.128ns (53.981%)  route 0.109ns (46.019%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.053ns
+    Source Clock Delay      (SCD):    1.516ns
+    Clock Pessimism Removal (CPR):    0.526ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.660     1.516    GEN_NODES[0].u_person_node/CLK
+    SLICE_X53Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y325        FDCE (Prop_fdce_C_Q)         0.100     1.616 r  GEN_NODES[0].u_person_node/work_cnt_reg[0]/Q
+                         net (fo=6, routed)           0.109     1.725    GEN_NODES[0].u_person_node/work_cnt_reg__0[0]
+    SLICE_X52Y325        LUT4 (Prop_lut4_I0_O)        0.028     1.753 r  GEN_NODES[0].u_person_node/work_cnt[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.753    GEN_NODES[0].u_person_node/p_0_in[2]
+    SLICE_X52Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.884     2.053    GEN_NODES[0].u_person_node/CLK
+    SLICE_X52Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[2]/C
+                         clock pessimism             -0.526     1.527    
+    SLICE_X52Y325        FDCE (Hold_fdce_C_D)         0.087     1.614    GEN_NODES[0].u_person_node/work_cnt_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.614    
+                         arrival time                           1.753    
+  -------------------------------------------------------------------
+                         slack                                  0.139    
+
+Slack (MET) :             0.147ns  (arrival time - required time)
+  Source:                 GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_gbl
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        0.245ns  (logic 0.128ns (52.304%)  route 0.117ns (47.696%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.074ns
+    Source Clock Delay      (SCD):    1.536ns
+    Clock Pessimism Removal (CPR):    0.527ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.137     0.137 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.693     0.830    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.856 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.680     1.536    GEN_NODES[2].u_person_node/CLK
+    SLICE_X51Y332        FDCE                                         r  GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y332        FDCE (Prop_fdce_C_Q)         0.100     1.636 r  GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]/Q
+                         net (fo=8, routed)           0.117     1.752    GEN_NODES[2].u_person_node/partner_pref_latched_reg_n_0_[2]
+    SLICE_X50Y332        LUT5 (Prop_lut5_I3_O)        0.028     1.780 r  GEN_NODES[2].u_person_node/FSM_sequential_state[0]_i_1__1/O
+                         net (fo=1, routed)           0.000     1.780    GEN_NODES[2].u_person_node/FSM_sequential_state[0]_i_1__1_n_0
+    SLICE_X50Y332        FDCE                                         r  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           0.761     1.139    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.169 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         0.905     2.074    GEN_NODES[2].u_person_node/CLK
+    SLICE_X50Y332        FDCE                                         r  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]/C
+                         clock pessimism             -0.527     1.547    
+    SLICE_X50Y332        FDCE (Hold_fdce_C_D)         0.087     1.634    GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.634    
+                         arrival time                           1.780    
+  -------------------------------------------------------------------
+                         slack                                  0.147    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_gbl
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk_global }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            1.409         10.000      8.592      BUFGCTRL_X0Y16  clk_global_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X53Y325   GEN_NODES[0].u_person_node/work_cnt_reg[1]/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X49Y328   GEN_NODES[1].u_person_node/work_cnt_reg[1]/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X48Y328   GEN_NODES[1].u_person_node/work_cnt_reg[3]/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X48Y328   GEN_NODES[1].u_person_node/work_cnt_reg[5]/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X48Y327   GEN_NODES[1].u_person_node/work_cnt_reg[7]/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X50Y328   GEN_NODES[1].u_person_node/working_reg/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X49Y329   GEN_NODES[2].u_person_node/work_cnt_reg[1]/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X48Y329   GEN_NODES[2].u_person_node/work_cnt_reg[3]/C
+Min Period        n/a     FDCE/C   n/a            0.750         10.000      9.250      SLICE_X48Y329   GEN_NODES[2].u_person_node/work_cnt_reg[5]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X49Y328   GEN_NODES[1].u_person_node/work_cnt_reg[1]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X48Y328   GEN_NODES[1].u_person_node/work_cnt_reg[3]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X48Y328   GEN_NODES[1].u_person_node/work_cnt_reg[5]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X50Y328   GEN_NODES[1].u_person_node/working_reg/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X51Y328   u_task_master/task_valid_reg[1]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X51Y328   u_task_master/task_valid_reg[3]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X53Y325   GEN_NODES[0].u_person_node/work_cnt_reg[1]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X48Y327   GEN_NODES[1].u_person_node/work_cnt_reg[7]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X49Y329   GEN_NODES[2].u_person_node/work_cnt_reg[1]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.400         5.000       4.600      SLICE_X48Y329   GEN_NODES[2].u_person_node/work_cnt_reg[3]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X54Y328   GEN_NODES[0].u_person_node/FSM_sequential_state_reg[0]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X54Y328   GEN_NODES[0].u_person_node/FSM_sequential_state_reg[1]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X54Y321   GEN_NODES[0].u_person_node/dating_cnt_reg[5]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X54Y329   GEN_NODES[0].u_person_node/wh_rx_ready_reg/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X53Y329   GEN_NODES[0].u_person_node/wh_tx_valid_reg/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X53Y325   GEN_NODES[0].u_person_node/work_cnt_reg[0]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X53Y325   GEN_NODES[0].u_person_node/work_cnt_reg[1]/C
+High Pulse Width  Slow    FDPE/C   n/a            0.350         5.000       4.650      SLICE_X50Y326   GEN_NODES[1].u_person_node/free_to_cupid_reg/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X49Y328   GEN_NODES[1].u_person_node/work_cnt_reg[0]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.350         5.000       4.650      SLICE_X49Y328   GEN_NODES[1].u_person_node/work_cnt_reg[1]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_gbl
+  To Clock:  clk_gbl
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.035ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.155ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.035ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/free_wait_cnt_reg[5]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.228ns  (logic 0.695ns (11.161%)  route 5.533ns (88.839%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.511ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.511ns = ( 13.511 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.587     6.228    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X55Y325        FDCE                                         f  GEN_NODES[0].u_person_node/free_wait_cnt_reg[5]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.296    13.511    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y325        FDCE                                         r  GEN_NODES[0].u_person_node/free_wait_cnt_reg[5]/C
+                         clock pessimism              0.000    13.511    
+                         clock uncertainty           -0.035    13.475    
+    SLICE_X55Y325        FDCE (Recov_fdce_C_CLR)     -0.212    13.263    GEN_NODES[0].u_person_node/free_wait_cnt_reg[5]
+  -------------------------------------------------------------------
+                         required time                         13.263    
+                         arrival time                          -6.228    
+  -------------------------------------------------------------------
+                         slack                                  7.035    
+
+Slack (MET) :             7.047ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/work_cnt_reg[0]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.511ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.511ns = ( 13.511 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X53Y325        FDCE                                         f  GEN_NODES[0].u_person_node/work_cnt_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.296    13.511    GEN_NODES[0].u_person_node/CLK
+    SLICE_X53Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[0]/C
+                         clock pessimism              0.000    13.511    
+                         clock uncertainty           -0.035    13.475    
+    SLICE_X53Y325        FDCE (Recov_fdce_C_CLR)     -0.212    13.263    GEN_NODES[0].u_person_node/work_cnt_reg[0]
+  -------------------------------------------------------------------
+                         required time                         13.263    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.047    
+
+Slack (MET) :             7.047ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/work_cnt_reg[1]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.511ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.511ns = ( 13.511 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X53Y325        FDCE                                         f  GEN_NODES[0].u_person_node/work_cnt_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.296    13.511    GEN_NODES[0].u_person_node/CLK
+    SLICE_X53Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[1]/C
+                         clock pessimism              0.000    13.511    
+                         clock uncertainty           -0.035    13.475    
+    SLICE_X53Y325        FDCE (Recov_fdce_C_CLR)     -0.212    13.263    GEN_NODES[0].u_person_node/work_cnt_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.263    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.047    
+
+Slack (MET) :             7.048ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/free_wait_cnt_reg[0]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.512ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.512ns = ( 13.512 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X55Y326        FDCE                                         f  GEN_NODES[0].u_person_node/free_wait_cnt_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.297    13.512    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y326        FDCE                                         r  GEN_NODES[0].u_person_node/free_wait_cnt_reg[0]/C
+                         clock pessimism              0.000    13.512    
+                         clock uncertainty           -0.035    13.476    
+    SLICE_X55Y326        FDCE (Recov_fdce_C_CLR)     -0.212    13.264    GEN_NODES[0].u_person_node/free_wait_cnt_reg[0]
+  -------------------------------------------------------------------
+                         required time                         13.264    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.048    
+
+Slack (MET) :             7.048ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/free_wait_cnt_reg[1]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.512ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.512ns = ( 13.512 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X55Y326        FDCE                                         f  GEN_NODES[0].u_person_node/free_wait_cnt_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.297    13.512    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y326        FDCE                                         r  GEN_NODES[0].u_person_node/free_wait_cnt_reg[1]/C
+                         clock pessimism              0.000    13.512    
+                         clock uncertainty           -0.035    13.476    
+    SLICE_X55Y326        FDCE (Recov_fdce_C_CLR)     -0.212    13.264    GEN_NODES[0].u_person_node/free_wait_cnt_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.264    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.048    
+
+Slack (MET) :             7.048ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/free_wait_cnt_reg[2]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.512ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.512ns = ( 13.512 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X55Y326        FDCE                                         f  GEN_NODES[0].u_person_node/free_wait_cnt_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.297    13.512    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y326        FDCE                                         r  GEN_NODES[0].u_person_node/free_wait_cnt_reg[2]/C
+                         clock pessimism              0.000    13.512    
+                         clock uncertainty           -0.035    13.476    
+    SLICE_X55Y326        FDCE (Recov_fdce_C_CLR)     -0.212    13.264    GEN_NODES[0].u_person_node/free_wait_cnt_reg[2]
+  -------------------------------------------------------------------
+                         required time                         13.264    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.048    
+
+Slack (MET) :             7.048ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/free_wait_cnt_reg[3]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.512ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.512ns = ( 13.512 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X55Y326        FDCE                                         f  GEN_NODES[0].u_person_node/free_wait_cnt_reg[3]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.297    13.512    GEN_NODES[0].u_person_node/CLK
+    SLICE_X55Y326        FDCE                                         r  GEN_NODES[0].u_person_node/free_wait_cnt_reg[3]/C
+                         clock pessimism              0.000    13.512    
+                         clock uncertainty           -0.035    13.476    
+    SLICE_X55Y326        FDCE (Recov_fdce_C_CLR)     -0.212    13.264    GEN_NODES[0].u_person_node/free_wait_cnt_reg[3]
+  -------------------------------------------------------------------
+                         required time                         13.264    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.048    
+
+Slack (MET) :             7.072ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/work_cnt_reg[3]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.511ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.511ns = ( 13.511 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X52Y325        FDCE                                         f  GEN_NODES[0].u_person_node/work_cnt_reg[3]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.296    13.511    GEN_NODES[0].u_person_node/CLK
+    SLICE_X52Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[3]/C
+                         clock pessimism              0.000    13.511    
+                         clock uncertainty           -0.035    13.475    
+    SLICE_X52Y325        FDCE (Recov_fdce_C_CLR)     -0.187    13.288    GEN_NODES[0].u_person_node/work_cnt_reg[3]
+  -------------------------------------------------------------------
+                         required time                         13.288    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.072    
+
+Slack (MET) :             7.072ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/work_cnt_reg[5]/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.217ns  (logic 0.695ns (11.183%)  route 5.521ns (88.817%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.511ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.511ns = ( 13.511 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.575     6.217    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X52Y325        FDCE                                         f  GEN_NODES[0].u_person_node/work_cnt_reg[5]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.296    13.511    GEN_NODES[0].u_person_node/CLK
+    SLICE_X52Y325        FDCE                                         r  GEN_NODES[0].u_person_node/work_cnt_reg[5]/C
+                         clock pessimism              0.000    13.511    
+                         clock uncertainty           -0.035    13.475    
+    SLICE_X52Y325        FDCE (Recov_fdce_C_CLR)     -0.187    13.288    GEN_NODES[0].u_person_node/work_cnt_reg[5]
+  -------------------------------------------------------------------
+                         required time                         13.288    
+                         arrival time                          -6.217    
+  -------------------------------------------------------------------
+                         slack                                  7.072    
+
+Slack (MET) :             7.087ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[0].u_person_node/working_reg/CLR
+                            (recovery check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_gbl rise@10.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        6.235ns  (logic 0.695ns (11.150%)  route 5.540ns (88.850%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.511ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.511ns = ( 13.511 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.652     0.652 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.947     3.599    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.043     3.642 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         2.593     6.235    GEN_NODES[0].u_person_node/rst_n
+    SLICE_X52Y324        FDCE                                         f  GEN_NODES[0].u_person_node/working_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)   10.000    10.000 r  
+    AD29                                              0.000    10.000 r  clk_global (IN)
+                         net (fo=0)                   0.000    10.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.649    10.649 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.483    12.132    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.215 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.296    13.511    GEN_NODES[0].u_person_node/CLK
+    SLICE_X52Y324        FDCE                                         r  GEN_NODES[0].u_person_node/working_reg/C
+                         clock pessimism              0.000    13.511    
+                         clock uncertainty           -0.035    13.475    
+    SLICE_X52Y324        FDCE (Recov_fdce_C_CLR)     -0.154    13.321    GEN_NODES[0].u_person_node/working_reg
+  -------------------------------------------------------------------
+                         required time                         13.321    
+                         arrival time                          -6.235    
+  -------------------------------------------------------------------
+                         slack                                  7.087    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.155ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.014ns  (logic 0.582ns (14.489%)  route 3.432ns (85.511%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.930ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.930ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.936     4.014    GEN_NODES[2].u_person_node/wh_rx_ready_reg_0
+    SLICE_X50Y332        FDCE                                         f  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.488     3.930    GEN_NODES[2].u_person_node/CLK
+    SLICE_X50Y332        FDCE                                         r  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]/C
+                         clock pessimism              0.000     3.930    
+                         clock uncertainty            0.035     3.965    
+    SLICE_X50Y332        FDCE (Remov_fdce_C_CLR)     -0.106     3.859    GEN_NODES[2].u_person_node/FSM_sequential_state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -3.859    
+                         arrival time                           4.014    
+  -------------------------------------------------------------------
+                         slack                                  0.155    
+
+Slack (MET) :             0.155ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/FSM_sequential_state_reg[1]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.014ns  (logic 0.582ns (14.489%)  route 3.432ns (85.511%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.930ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.930ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.936     4.014    GEN_NODES[2].u_person_node/wh_rx_ready_reg_0
+    SLICE_X50Y332        FDCE                                         f  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.488     3.930    GEN_NODES[2].u_person_node/CLK
+    SLICE_X50Y332        FDCE                                         r  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[1]/C
+                         clock pessimism              0.000     3.930    
+                         clock uncertainty            0.035     3.965    
+    SLICE_X50Y332        FDCE (Remov_fdce_C_CLR)     -0.106     3.859    GEN_NODES[2].u_person_node/FSM_sequential_state_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -3.859    
+                         arrival time                           4.014    
+  -------------------------------------------------------------------
+                         slack                                  0.155    
+
+Slack (MET) :             0.155ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/FSM_sequential_state_reg[2]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.014ns  (logic 0.582ns (14.489%)  route 3.432ns (85.511%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.930ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.930ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.936     4.014    GEN_NODES[2].u_person_node/wh_rx_ready_reg_0
+    SLICE_X50Y332        FDCE                                         f  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.488     3.930    GEN_NODES[2].u_person_node/CLK
+    SLICE_X50Y332        FDCE                                         r  GEN_NODES[2].u_person_node/FSM_sequential_state_reg[2]/C
+                         clock pessimism              0.000     3.930    
+                         clock uncertainty            0.035     3.965    
+    SLICE_X50Y332        FDCE (Remov_fdce_C_CLR)     -0.106     3.859    GEN_NODES[2].u_person_node/FSM_sequential_state_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -3.859    
+                         arrival time                           4.014    
+  -------------------------------------------------------------------
+                         slack                                  0.155    
+
+Slack (MET) :             0.155ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/couple_locked_reg/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.014ns  (logic 0.582ns (14.489%)  route 3.432ns (85.511%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.930ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.930ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.936     4.014    GEN_NODES[2].u_person_node/wh_rx_ready_reg_0
+    SLICE_X50Y332        FDCE                                         f  GEN_NODES[2].u_person_node/couple_locked_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.488     3.930    GEN_NODES[2].u_person_node/CLK
+    SLICE_X50Y332        FDCE                                         r  GEN_NODES[2].u_person_node/couple_locked_reg/C
+                         clock pessimism              0.000     3.930    
+                         clock uncertainty            0.035     3.965    
+    SLICE_X50Y332        FDCE (Remov_fdce_C_CLR)     -0.106     3.859    GEN_NODES[2].u_person_node/couple_locked_reg
+  -------------------------------------------------------------------
+                         required time                         -3.859    
+                         arrival time                           4.014    
+  -------------------------------------------------------------------
+                         slack                                  0.155    
+
+Slack (MET) :             0.174ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/initiator_flag_to_node_reg[2]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.032ns  (logic 0.582ns (14.423%)  route 3.451ns (85.577%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.929ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.929ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.954     4.032    u_cupid_core/rst_n
+    SLICE_X50Y331        FDCE                                         f  u_cupid_core/initiator_flag_to_node_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.487     3.929    u_cupid_core/CLK
+    SLICE_X50Y331        FDCE                                         r  u_cupid_core/initiator_flag_to_node_reg[2]/C
+                         clock pessimism              0.000     3.929    
+                         clock uncertainty            0.035     3.964    
+    SLICE_X50Y331        FDCE (Remov_fdce_C_CLR)     -0.106     3.858    u_cupid_core/initiator_flag_to_node_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -3.858    
+                         arrival time                           4.032    
+  -------------------------------------------------------------------
+                         slack                                  0.174    
+
+Slack (MET) :             0.174ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_wormhole_fabric/dst_valid_reg[2]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.032ns  (logic 0.582ns (14.423%)  route 3.451ns (85.577%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.929ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.929ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.954     4.032    u_wormhole_fabric/rst_n
+    SLICE_X50Y331        FDCE                                         f  u_wormhole_fabric/dst_valid_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.487     3.929    u_wormhole_fabric/CLK
+    SLICE_X50Y331        FDCE                                         r  u_wormhole_fabric/dst_valid_reg[2]/C
+                         clock pessimism              0.000     3.929    
+                         clock uncertainty            0.035     3.964    
+    SLICE_X50Y331        FDCE (Remov_fdce_C_CLR)     -0.106     3.858    u_wormhole_fabric/dst_valid_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -3.858    
+                         arrival time                           4.032    
+  -------------------------------------------------------------------
+                         slack                                  0.174    
+
+Slack (MET) :             0.189ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.014ns  (logic 0.582ns (14.489%)  route 3.432ns (85.511%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.930ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.930ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.936     4.014    GEN_NODES[2].u_person_node/wh_rx_ready_reg_0
+    SLICE_X51Y332        FDCE                                         f  GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.488     3.930    GEN_NODES[2].u_person_node/CLK
+    SLICE_X51Y332        FDCE                                         r  GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]/C
+                         clock pessimism              0.000     3.930    
+                         clock uncertainty            0.035     3.965    
+    SLICE_X51Y332        FDCE (Remov_fdce_C_CLR)     -0.140     3.825    GEN_NODES[2].u_person_node/partner_pref_latched_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -3.825    
+                         arrival time                           4.014    
+  -------------------------------------------------------------------
+                         slack                                  0.189    
+
+Slack (MET) :             0.189ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/wh_tx_valid_reg/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.014ns  (logic 0.582ns (14.489%)  route 3.432ns (85.511%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.930ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.930ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.936     4.014    GEN_NODES[2].u_person_node/wh_rx_ready_reg_0
+    SLICE_X51Y332        FDCE                                         f  GEN_NODES[2].u_person_node/wh_tx_valid_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.488     3.930    GEN_NODES[2].u_person_node/CLK
+    SLICE_X51Y332        FDCE                                         r  GEN_NODES[2].u_person_node/wh_tx_valid_reg/C
+                         clock pessimism              0.000     3.930    
+                         clock uncertainty            0.035     3.965    
+    SLICE_X51Y332        FDCE (Remov_fdce_C_CLR)     -0.140     3.825    GEN_NODES[2].u_person_node/wh_tx_valid_reg
+  -------------------------------------------------------------------
+                         required time                         -3.825    
+                         arrival time                           4.014    
+  -------------------------------------------------------------------
+                         slack                                  0.189    
+
+Slack (MET) :             0.189ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_cupid_core/pair_valid_to_node_reg[2]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.014ns  (logic 0.582ns (14.489%)  route 3.432ns (85.511%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.930ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.930ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.936     4.014    u_cupid_core/rst_n
+    SLICE_X51Y332        FDCE                                         f  u_cupid_core/pair_valid_to_node_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.488     3.930    u_cupid_core/CLK
+    SLICE_X51Y332        FDCE                                         r  u_cupid_core/pair_valid_to_node_reg[2]/C
+                         clock pessimism              0.000     3.930    
+                         clock uncertainty            0.035     3.965    
+    SLICE_X51Y332        FDCE (Remov_fdce_C_CLR)     -0.140     3.825    u_cupid_core/pair_valid_to_node_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -3.825    
+                         arrival time                           4.014    
+  -------------------------------------------------------------------
+                         slack                                  0.189    
+
+Slack (MET) :             0.208ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GEN_NODES[2].u_person_node/wh_tx_data_reg[2]/CLR
+                            (removal check against rising-edge clock clk_gbl  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_gbl rise@0.000ns - clk_gbl rise@0.000ns)
+  Data Path Delay:        4.032ns  (logic 0.582ns (14.423%)  route 3.451ns (85.577%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.000ns
+  Clock Path Skew:        3.929ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.929ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+                         input delay                  0.000     0.000    
+    AB30                                              0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    AB30                 IBUF (Prop_ibuf_I_O)         0.546     0.546 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           2.497     3.042    GEN_NODES[2].u_person_node/rst_n_IBUF
+    SLICE_X51Y331        LUT1 (Prop_lut1_I0_O)        0.036     3.078 f  GEN_NODES[2].u_person_node/partner_id_to_node[0][1]_i_2/O
+                         net (fo=191, routed)         0.954     4.032    GEN_NODES[2].u_person_node/wh_rx_ready_reg_0
+    SLICE_X51Y331        FDCE                                         f  GEN_NODES[2].u_person_node/wh_tx_data_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_gbl rise edge)    0.000     0.000 r  
+    AD29                                              0.000     0.000 r  clk_global (IN)
+                         net (fo=0)                   0.000     0.000    clk_global
+    AD29                 IBUF (Prop_ibuf_I_O)         0.755     0.755 r  clk_global_IBUF_inst/O
+                         net (fo=1, routed)           1.594     2.349    clk_global_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.442 r  clk_global_IBUF_BUFG_inst/O
+                         net (fo=191, routed)         1.487     3.929    GEN_NODES[2].u_person_node/CLK
+    SLICE_X51Y331        FDCE                                         r  GEN_NODES[2].u_person_node/wh_tx_data_reg[2]/C
+                         clock pessimism              0.000     3.929    
+                         clock uncertainty            0.035     3.964    
+    SLICE_X51Y331        FDCE (Remov_fdce_C_CLR)     -0.140     3.824    GEN_NODES[2].u_person_node/wh_tx_data_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -3.824    
+                         arrival time                           4.032    
+  -------------------------------------------------------------------
+                         slack                                  0.208    
+
+
+
+
+

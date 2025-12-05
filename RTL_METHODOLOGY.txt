@@ -1,0 +1,40 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec  4 22:55:48 2025
+| Host         : HOFUD running 64-bit major release  (build 9200)
+| Command      : report_methodology -name ultrafast_methodology_1 -file {C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/RTL_METHODOLOGY.txt} -rpx {C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/ultrafast_methodology_1.rpx} -checks {XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 HPDR-1 RRRS-1 RROR-1 ROAS-1 RMOR-1 RMIR-1 RFTL-1 RFRC-1 RFRA-1 RFFI-1 RFFH-1 RFCF-1 RCCL-1 RCBG-1 RAMP-1 RAMF-1 RAMD-1 RAKN-1}
+| Design       : silicon_dating_top
+| Device       : xc7vx690tffg1157-2
+| Speed File   : -2
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: rtl-elabsilicon_dating_top
+          Floorplan: rtl_1
+      Design limits: <entire design considered>
+
+            Checks: CLKC-1 CLKC-2 CLKC-3 CLKC-4 CLKC-5 CLKC-9 CLKC-18 CLKC-35 
+CLKC-36 CLKC-37 CLKC-38 CLKC-53 CLKC-54 HPDR-1 RAKN-1 RAMD-1 RAMF-1 RAMP-1 
+RCBG-1 RCCL-1 RFCF-1 RFFH-1 RFFI-1 RFRA-1 RFRC-1 RFTL-1 RMIR-1 RMOR-1 ROAS-1 
+RROR-1 RRRS-1 XDCB-1 XDCB-2 XDCB-3 XDCB-4 XDCB-5 XDCC-1 XDCC-2 XDCC-3 XDCC-4 
+XDCC-5 XDCC-6 XDCC-7 XDCC-8 XDCH-1 XDCH-2
+             Max violations: <unlimited>
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
+
+2. REPORT DETAILS
+-----------------
+

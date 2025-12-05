@@ -1,0 +1,147 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Time 50000: The silicon city awakens. 4 nodes are ready for work and maybe love.
+Time 55000: Node 0 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 55000: Node 1 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 55000: Node 2 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 55000: Node 3 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 65000: Cupid whispers to Node 0: 'How about you meet Node 1?' (pair_valid).
+Time 65000: Cupid whispers to Node 1: 'How about you meet Node 0?' (pair_valid).
+Time 75000: Node 0 has left the lobby and gone on a date with Node 1.
+Time 75000: Node 1 has left the lobby and gone on a date with Node 0.
+Time 85000: Cupid whispers to Node 2: 'How about you meet Node 3?' (pair_valid).
+Time 85000: Cupid whispers to Node 3: 'How about you meet Node 2?' (pair_valid).
+Time 95000: Node 2 has left the lobby and gone on a date with Node 3.
+Time 95000: Node 3 has left the lobby and gone on a date with Node 2.
+Time 245000: Signal issues: Node 1 sees too many errors while talking to Node 0. They call it off.
+Time 255000: Node 1 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 265000: Signal issues: Node 3 sees too many errors while talking to Node 2. They call it off.
+Time 275000: Node 3 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 285000: Cupid whispers to Node 1: 'How about you meet Node 3?' (pair_valid).
+Time 285000: Cupid whispers to Node 3: 'How about you meet Node 1?' (pair_valid).
+Time 295000: Node 1 has left the lobby and gone on a date with Node 3.
+Time 295000: Node 3 has left the lobby and gone on a date with Node 1.
+Time 315000: Signal issues: Node 0 sees too many errors while talking to Node 1. They call it off.
+Time 325000: Node 0 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 355000: Node 1 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 355000: Signal issues: Node 2 sees too many errors while talking to Node 3. They call it off.
+Time 365000: Node 2 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 365000: Cupid whispers to Node 0: 'How about you meet Node 1?' (pair_valid).
+Time 365000: Cupid whispers to Node 1: 'How about you meet Node 0?' (pair_valid).
+Time 375000: Node 0 has left the lobby and gone on a date with Node 1.
+Time 375000: Node 1 has left the lobby and gone on a date with Node 0.
+Time 435000: Node 0 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 605000: Node 3 is running hot at temp=71 while dating. Sparks are literally flying.
+Time 615000: Node 2 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 615000: Node 3 is running hot at temp=72 while dating. Sparks are literally flying.
+Time 625000: Cupid whispers to Node 0: 'How about you meet Node 2?' (pair_valid).
+Time 625000: Cupid whispers to Node 2: 'How about you meet Node 0?' (pair_valid).
+Time 625000: Node 3 is running hot at temp=73 while dating. Sparks are literally flying.
+Time 635000: Node 0 has left the lobby and gone on a date with Node 2.
+Time 635000: Node 2 has left the lobby and gone on a date with Node 0.
+Time 635000: Node 3 is running hot at temp=74 while dating. Sparks are literally flying.
+Time 645000: Node 3 is running hot at temp=75 while dating. Sparks are literally flying.
+Time 655000: Node 3 is running hot at temp=76 while dating. Sparks are literally flying.
+Time 665000: Node 1 is running hot at temp=71 while dating. Sparks are literally flying.
+Time 665000: Node 3 is running hot at temp=77 while dating. Sparks are literally flying.
+Time 675000: Node 1 is running hot at temp=72 while dating. Sparks are literally flying.
+Time 675000: Node 3 is running hot at temp=78 while dating. Sparks are literally flying.
+Time 685000: Node 0 finishes its task and walks into the dating lobby (free_to_cupid=1).
+Time 685000: Node 1 is running hot at temp=73 while dating. Sparks are literally flying.
+Time 685000: Node 2 is running hot at temp=71 while dating. Sparks are literally flying.
+Time 685000: Node 3 is running hot at temp=79 while dating. Sparks are literally flying.
+Time 695000: Node 1 is running hot at temp=74 while dating. Sparks are literally flying.
+Time 695000: Node 2 is running hot at temp=72 while dating. Sparks are literally flying.
+Time 695000: Node 3 is running hot at temp=80 while dating. Sparks are literally flying.
+Time 705000: Node 1 is running hot at temp=75 while dating. Sparks are literally flying.
+Time 705000: Node 2 is running hot at temp=73 while dating. Sparks are literally flying.
+Time 705000: Node 3 is running hot at temp=81 while dating. Sparks are literally flying.
+Time 715000: Node 1 is running hot at temp=76 while dating. Sparks are literally flying.
+Time 715000: Node 2 is running hot at temp=74 while dating. Sparks are literally flying.
+Time 715000: Node 3 is running hot at temp=82 while dating. Sparks are literally flying.
+Time 725000: Node 1 is running hot at temp=77 while dating. Sparks are literally flying.
+Time 725000: Node 2 is running hot at temp=75 while dating. Sparks are literally flying.
+Time 725000: Node 3 is running hot at temp=83 while dating. Sparks are literally flying.
+Time 735000: Node 1 is running hot at temp=78 while dating. Sparks are literally flying.
+Time 735000: Node 2 is running hot at temp=76 while dating. Sparks are literally flying.
+Time 735000: Node 3 is running hot at temp=84 while dating. Sparks are literally flying.
+Time 745000: Node 1 is running hot at temp=79 while dating. Sparks are literally flying.
+Time 745000: Node 2 is running hot at temp=77 while dating. Sparks are literally flying.
+Time 745000: Node 3 is running hot at temp=85 while dating. Sparks are literally flying.
+Time 755000: Node 1 is running hot at temp=80 while dating. Sparks are literally flying.
+Time 755000: Node 2 is running hot at temp=78 while dating. Sparks are literally flying.
+Time 755000: Node 3 is running hot at temp=86 while dating. Sparks are literally flying.
+Time 765000: Node 1 is running hot at temp=81 while dating. Sparks are literally flying.
+Time 765000: Node 2 is running hot at temp=79 while dating. Sparks are literally flying.
+Time 765000: Node 3 is running hot at temp=87 while dating. Sparks are literally flying.
+Time 775000: Node 1 is running hot at temp=82 while dating. Sparks are literally flying.
+Time 775000: Node 2 is running hot at temp=80 while dating. Sparks are literally flying.
+Time 775000: Node 3 is running hot at temp=88 while dating. Sparks are literally flying.
+Time 785000: Node 1 is running hot at temp=83 while dating. Sparks are literally flying.
+Time 785000: Node 2 is running hot at temp=81 while dating. Sparks are literally flying.
+Time 785000: Node 3 is running hot at temp=89 while dating. Sparks are literally flying.
+Time 795000: Node 1 is running hot at temp=84 while dating. Sparks are literally flying.
+Time 795000: Node 2 is running hot at temp=82 while dating. Sparks are literally flying.
+Time 795000: Node 3 is running hot at temp=90 while dating. Sparks are literally flying.
+Time 805000: Node 1 is running hot at temp=85 while dating. Sparks are literally flying.
+Time 805000: Node 2 is running hot at temp=83 while dating. Sparks are literally flying.
+Time 805000: Node 3 is running hot at temp=91 while dating. Sparks are literally flying.
+Time 815000: Node 1 is running hot at temp=86 while dating. Sparks are literally flying.
+Time 815000: Node 2 is running hot at temp=84 while dating. Sparks are literally flying.
+Time 815000: Node 3 is running hot at temp=92 while dating. Sparks are literally flying.
+Time 825000: Node 1 is running hot at temp=87 while dating. Sparks are literally flying.
+Time 825000: Node 2 is running hot at temp=85 while dating. Sparks are literally flying.
+Time 825000: Node 3 is running hot at temp=93 while dating. Sparks are literally flying.
+Time 835000: Node 1 is running hot at temp=88 while dating. Sparks are literally flying.
+Time 835000: Node 2 is running hot at temp=86 while dating. Sparks are literally flying.
+Time 835000: Node 3 is running hot at temp=94 while dating. Sparks are literally flying.
+Time 845000: Node 1 is running hot at temp=89 while dating. Sparks are literally flying.
+Time 845000: Node 2 is running hot at temp=87 while dating. Sparks are literally flying.
+Time 845000: Node 3 is running hot at temp=95 while dating. Sparks are literally flying.
+Time 855000: Node 1 is running hot at temp=90 while dating. Sparks are literally flying.
+Time 855000: Node 2 is running hot at temp=88 while dating. Sparks are literally flying.
+Time 855000: Node 3 is running hot at temp=96 while dating. Sparks are literally flying.
+Time 865000: Node 1 is running hot at temp=91 while dating. Sparks are literally flying.
+Time 865000: Node 2 is running hot at temp=89 while dating. Sparks are literally flying.
+Time 865000: Node 3 is running hot at temp=97 while dating. Sparks are literally flying.
+Time 875000: Node 1 is running hot at temp=92 while dating. Sparks are literally flying.
+Time 875000: Node 2 is running hot at temp=90 while dating. Sparks are literally flying.
+Time 875000: Node 3 is running hot at temp=98 while dating. Sparks are literally flying.
+Time 885000: Node 1 is running hot at temp=93 while dating. Sparks are literally flying.
+Time 885000: Node 2 is running hot at temp=91 while dating. Sparks are literally flying.
+Time 885000: Node 3 is running hot at temp=99 while dating. Sparks are literally flying.
+Time 895000: Node 1 is running hot at temp=94 while dating. Sparks are literally flying.
+Time 895000: Node 2 is running hot at temp=92 while dating. Sparks are literally flying.
+Time 895000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 905000: Node 1 is running hot at temp=95 while dating. Sparks are literally flying.
+Time 905000: Node 2 is running hot at temp=93 while dating. Sparks are literally flying.
+Time 905000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 915000: Node 1 is running hot at temp=96 while dating. Sparks are literally flying.
+Time 915000: Node 2 is running hot at temp=94 while dating. Sparks are literally flying.
+Time 915000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 925000: Node 1 is running hot at temp=97 while dating. Sparks are literally flying.
+Time 925000: Node 2 is running hot at temp=95 while dating. Sparks are literally flying.
+Time 925000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 935000: Node 1 is running hot at temp=98 while dating. Sparks are literally flying.
+Time 935000: Node 2 is running hot at temp=96 while dating. Sparks are literally flying.
+Time 935000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 945000: Node 1 is running hot at temp=99 while dating. Sparks are literally flying.
+Time 945000: Node 2 is running hot at temp=97 while dating. Sparks are literally flying.
+Time 945000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 955000: Node 1 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 955000: Node 2 is running hot at temp=98 while dating. Sparks are literally flying.
+Time 955000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 965000: Node 1 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 965000: Node 2 is running hot at temp=99 while dating. Sparks are literally flying.
+Time 965000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 975000: Node 1 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 975000: Node 2 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 975000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 985000: Node 1 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 985000: Node 2 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 985000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 995000: Node 1 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 995000: Node 2 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 995000: Node 3 is running hot at temp=100 while dating. Sparks are literally flying.
+Time 1000000: The workday in silicon city ends. Final couples count on debug LEDs = 0.
+$finish called at time : 1 us : File "C:/Users/RISHIK NAIR/Downloads/To-do/Silicon_dating/Silicon_dating.srcs/sim_1/new/tb_silicon_dating_story.v" Line 217

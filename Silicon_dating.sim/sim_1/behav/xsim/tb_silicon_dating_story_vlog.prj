@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Silicon_dating.srcs/sources_1/new/cupid_core.v" \
+"../../../../Silicon_dating.srcs/sources_1/new/person_node.v" \
+"../../../../Silicon_dating.srcs/sources_1/new/silicon_dating_top.v" \
+"../../../../Silicon_dating.srcs/sources_1/new/task_master.v" \
+"../../../../Silicon_dating.srcs/sources_1/new/wormhole_fabric.v" \
+"../../../../Silicon_dating.srcs/sim_1/new/tb_silicon_dating_story.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
