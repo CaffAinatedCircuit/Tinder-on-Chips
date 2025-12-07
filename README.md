@@ -258,7 +258,7 @@ Vivado walks through the usual ritual:
         
     - `tb_silicon_dating_story`
         
-- Snapshot `tb_silicon_dating_story_behav` is built and simulated.[semanticscholar+1](https://www.semanticscholar.org/paper/2fe16f01c975f6fe93bf28b2970ab29d33aabadf)​
+- Snapshot `tb_silicon_dating_story_behav` is built and simulated.
     
 
 This is the toolchain’s way of saying: **“The city is ready for another day.”**
@@ -376,7 +376,3 @@ You can enhance this note with a few conceptual images (drawn by you or as diagr
         
     - Arrows annotated with **“prefs XOR too large → PRE_FAIL”**, **“error_ctr > TH → ERROR_BREAK”**, **“DATE_LEN reached → COUPLED”**.
         
-
-These visuals fit nicely beside the story text in Obsidian and help explain both the **romantic metaphor** and the **hard RTL behavior** at the same time.[joss.theoj+1](http://joss.theoj.org/papers/10.21105/joss.00185)​
-
-If you want, a follow-up note can be written as a “post-mortem” where you tune DATE_LEN, temperature thresholds, and error rules to finally let at least one couple survive a day in Silicon City.
